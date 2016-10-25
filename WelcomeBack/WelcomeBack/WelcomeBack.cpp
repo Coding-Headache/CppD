@@ -24,6 +24,8 @@
  * Add all function prototypes here                                          */
 void greeting();
 void sumofn();
+void sumMod();
+void leapYear();
 /*****************************************************************************/
 
 int main()
@@ -39,9 +41,10 @@ int main()
 		printf("(1)\t-\tHello World\n");
 		printf("(2)\t-\tGreeting\n");
 		printf("(3)\t-\tSum of N\n");
-		//printf("(4)\t-\tHello World\n");
-		//printf("(1)\t-\tHello World\n");
-		//printf("(1)\t-\tHello World\n\n");
+		printf("(4)\t-\tSum of N (multiples of 3 or 5)\n");
+		//printf("(5)\t-\tTimes Tables\n");
+		//printf("(6)\t-\tPrime Numbers\n");
+		printf("(7)\t-\tLeap Years\n");
 		printf("Enter Program Choice: ");
 		scanf("%d", &prog);
 		
@@ -56,6 +59,12 @@ int main()
 		case 3:
 			sumofn();
 			break;
+		case 4:
+			sumMod();
+			break;
+		case 7:
+			leapYear();
+			break;
 		default:
 			printf("Incorrect option...");
 			break;
@@ -68,6 +77,16 @@ int main()
 
 }
 
+/******************************************************************************
+ * Function Name      :  void greeting()
+ *    returns         :  nil
+ *    arg1            :  nil
+ *    arg2            :  nil
+ * Created by         :  Daniel Hyde
+ * Date created       :  26 September 2016
+ * Description        :  Prints a greeting.
+ * Notes              :  nil
+ *****************************************************************************/
 void greeting()
 {
 	char name[150];
@@ -77,6 +96,17 @@ void greeting()
 	return;
 }
 
+/******************************************************************************
+ * Function Name      :  void sumofn()
+ *    returns         :  nil
+ *    arg1            :  nil
+ *    arg2            :  nil
+ * Created by         :  Daniel Hyde
+ * Date created       :  26 September 2016
+ * Description        :  Asks for a number and calculates the sum of the numbers
+ *						 to theat figure
+ * Notes              :  nil
+ *****************************************************************************/
 void sumofn()
 {
 	int i = 0, ans = 0;
@@ -87,5 +117,61 @@ void sumofn()
 	for (i = 0; i<x + 1; ++i)
 		ans += i;
 	printf("\nThe sum  of numbers to %d = %d\n\n", x, ans);
+	return;
+}
+
+/******************************************************************************
+ * Function Name      :  void sumMod()
+ *    returns         :  nil
+ *    arg1            :  nil
+ *    arg2            :  nil
+ * Created by         :  Daniel Hyde
+ * Date created       :  26 September 2016
+ * Description        :  As with sumofn(), however, this will only use multiples
+ *						 of 3 and 5.
+ * Notes              :  nil
+ *****************************************************************************/
+void sumMod()
+{
+	int i = 0, ans = 0;
+	int x;
+
+	printf("Enter a number: ");
+	scanf("%d", &x);
+	for (i = 0; i < x + 1; ++i)
+	{
+		if ((i % 3 == 0) || (i % 5 == 0))
+		{
+			ans += i;
+		}
+	}
+	printf("\nThe sum  of numbers to %d = %d\n\n", x, ans);
+	return;
+}
+
+/******************************************************************************
+ * Function Name      :  void leapYear()
+ *    returns         :  nil
+ *    arg1            :  nil
+ *    arg2            :  nil
+ * Created by         :  Daniel Hyde
+ * Date created       :  26 September 2016
+ * Description        :  Calculates the leap years in the next 20 years.
+ * Notes              :  nil
+ *****************************************************************************/
+void leapYear()
+{
+	int year, i;
+
+	printf("What year is it? ");
+	scanf("%d", &year);
+
+	for (i = year; i < year + 21; ++i)
+	{
+		if (i % 4 == 0)
+		{
+			printf("%d is a leap year \n", i);
+		}
+	}
 	return;
 }
