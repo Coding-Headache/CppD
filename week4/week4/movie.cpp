@@ -16,16 +16,16 @@ movie::movie(string movieTitle, int releaseYr, string setDesc, string movieGenre
 	genre = movieGenre;
 }
 
-userRating movie::addMovieRating(int rating) {
-	userRating tmpRating(rating);
-	ratings.push_back(tmpRating);
+userRating movie::addMovieRating(int Urating) {
+	userRating tmpRating(Urating);
+	rating.push_back(tmpRating);
 
 	return tmpRating;
 }
 
-userComment movie::addComment(string comment) {
-	userComment tmpComment(comment);
-	comments.push_back(tmpComment);
+userComment movie::addComment(string Ucomment) {
+	userComment tmpComment(Ucomment);
+	comment.push_back(tmpComment);
 
 	return tmpComment;
 }

@@ -4,7 +4,7 @@
 #include "userData.h"
 #include <string.h>
 
-uusing namespace std;
+using namespace std;
 
 userData::userData(string firstName, string homeAddress, string mainCreditCard) {
 	name = firstName;

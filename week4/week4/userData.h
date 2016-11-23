@@ -2,9 +2,8 @@
 #define USERDATA_H
 
 #include "stdafx.h"
-#pragma once
-
 #include <string>
+#pragma once
 
 using namespace std;
 

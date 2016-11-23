@@ -24,48 +24,12 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="movie.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="registeredUser.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="theatre.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="userComment.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="userData.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="userRating.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="week4.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="movie.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="registeredUser.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="theatre.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="userComment.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="userData.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="userRating.cpp">
+    <ClCompile Include="week7.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
