@@ -1,5 +1,4 @@
 ## Week 7 - Debugging Code
-
 This exercise is designed in order to learn how to use the debugging tools within MS Visual Studio.
 
 The program itself is supposed to print Pascal's Triangle, as shown below:
@@ -30,5 +29,8 @@ TABLE 1: THE FIRST 5 ROWS OF PASCALs TRIANGLE:
 NICE!!
 
 ### Using This Project.
-
 In order to use this project, clone it and delete week7.cpp, then rename week7_ORIGINAL.cpp and enjoy the hunt.
+
+
+## Lorenz Machine Application - CREDIT TASK
+This is the credit task for this week. Being provided with a buggy version of a Lorenz machine application we were to debug the code for assessment. The original buggy version is labelled as Lorenz_ORIGINAL and the final version is labelled Lorenz_FINAL.
