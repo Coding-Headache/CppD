@@ -25,6 +25,6 @@ I have utilized this code to test this.  With a few edits, But the answer is yes
 Write code to swap the first and last element of a `deque`.
 
 #### Activity 3
-Write a small function using the push and pop functions that return a `deque` which is the reverse of a given `deque`.
+Write a small function using the push and pop functions that return a `deque` which is the reverse of a given `deque`... TODO.
 
 #### Activity 4
