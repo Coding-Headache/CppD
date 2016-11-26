@@ -1,12 +1,12 @@
 /******************************************************************************
- * File Name: activity3.cpp
+ * File Name: activity1.cpp
  * Program Author: Daniel Hyde
  * Student ID: ********
  * Project Name: woorksheets
  * Course Code: UFCFK4-30-2
  * Date Created: 25 November 2016
  *
- * Description: Swap the first and last elements of a deque.
+ * Description: Is it possible to create a deque of deques that will hold ints?
  *****************************************************************************/
 /* Include section
  * Add all #includes here                                                    */
@@ -26,38 +26,15 @@
 /*****************************************************************************/
  int main()
  {
-	 // instantiates an empty deque for storing int values
-	 deque<int> dq1;
+     deque<int> intdq(5, 1);
+	 deque<deque<int>> dequedq(5, intdq);
 
 	 for (int i = 0; i < 5; i++)
 	 {
-		 dq1.push_front(i); // add a value to the end of the deque
+		 cout << "contents of cell " << i << " are " 
+			        << dequedq[i][i] << " using [] access operator" << endl;
 	 }
 
-	 // print contents of deque (using size() to discover its current size)
-	 cout << "------------------- after push_back ------------------" << endl;
-
-	 for (int i = 0; i<dq1.size(); i++)
-	 {
-		 cout << "element " << i + 1 << " is " << dq1.at(i) << endl;
-	 }
-
-	 // remove an element from the start and end of the container
-	 dq1.pop_front();
-	 dq1.pop_back();
-
-	 // print contents of deque (using size() to discover its current size)
-	 cout << "--------------- after pop_front/pop_back --------------" << endl;
-	 for (int i = 0; i<dq1.size(); i++)
-	 {
-		 cout << "element " << i + 1 << " is " << dq1.at(i) << endl;
-	 }
-	 
-
-
-
-	 system("pause");
-	
      return 0;
  }
 

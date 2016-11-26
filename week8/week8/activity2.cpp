@@ -1,5 +1,5 @@
 /******************************************************************************
- * File Name: activity3.cpp
+ * File Name: activity2.cpp
  * Program Author: Daniel Hyde
  * Student ID: ********
  * Project Name: woorksheets
@@ -26,36 +26,27 @@
 /*****************************************************************************/
  int main()
  {
-	 // instantiates an empty deque for storing int values
-	 deque<int> dq1;
+	 int array1[] = {1,2,3,4,5};
+     deque<int> intdq(array1, array1+5);
 
-	 for (int i = 0; i < 5; i++)
+	 // print original deque contents
+	 for (int i=0;i<5;i++)
 	 {
-		 dq1.push_front(i); // add a value to the end of the deque
+		 cout << "contents of cell " << i << " is " << intdq.at(i) << endl;
 	 }
 
-	 // print contents of deque (using size() to discover its current size)
-	 cout << "------------------- after push_back ------------------" << endl;
+	 cout << "\n\n";
 
-	 for (int i = 0; i<dq1.size(); i++)
+	 // perform swap of first and last items in deque
+	 int temp = intdq.front();
+	 intdq.front() = intdq.back();
+	 intdq.back() = temp;
+
+	 // print deque AFTER swap.
+	 for (int i=0;i<5;i++)
 	 {
-		 cout << "element " << i + 1 << " is " << dq1.at(i) << endl;
+		 cout << "contents of cell " << i << " is " << intdq.at(i) << endl;
 	 }
-
-	 // remove an element from the start and end of the container
-	 dq1.pop_front();
-	 dq1.pop_back();
-
-	 // print contents of deque (using size() to discover its current size)
-	 cout << "--------------- after pop_front/pop_back --------------" << endl;
-	 for (int i = 0; i<dq1.size(); i++)
-	 {
-		 cout << "element " << i + 1 << " is " << dq1.at(i) << endl;
-	 }
-	 
-
-
-
 	 system("pause");
 	
      return 0;
